@@ -34,14 +34,20 @@ if errorlevel 1 goto :project_2
 
 :project_1
 cls
+
 echo message_open_vscode
 cd %directory_path%\Project_1\
+
+git checkout develop && git pull origin develop 
+
 code .
 
 :project_1
 cls
+
 echo message_open_vscode
 cd %directory_path%\Project_2\
+
+git checkout develop && git pull origin develop 
+
 code .
-
-
